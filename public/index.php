@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/index.css?t=2021-01-09">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <title>Главная</title>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -85,6 +79,30 @@
             }
         }
     </script>
+    <title>Ваш репетитор по химии и математике</title>
+    <meta property="description" content="Меня зовут Мария Суровцева. Я профессиональный репетитор по химии и математике. Я готовлю своих учеников к экзаменам формата ОГЭ и ЕГЭ, к вступительным экзаменам в специализированные школы, а также провожу занятия со школьниками, которые хотят повысить успеваемость по химии, алгебре и геометрии.">
+    <meta property="og:title" content="Ваш репетитор по химии и математике">
+    <meta property="og:type" content="person">
+    <meta property="og:url" content="https://surovtseva.ru/">
+    <meta property="og:image" content="https://surovtseva.ru/img/main.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Мария Суровцева">
+    <meta property="og:image:secure_url" content="https://surovtseva.ru/img/main.jpg">
+    <meta property="og:description" content="Меня зовут Мария Суровцева. Я профессиональный репетитор по химии и математике. Я готовлю своих учеников к экзаменам формата ОГЭ и ЕГЭ, к вступительным экзаменам в специализированные школы, а также провожу занятия со школьниками, которые хотят повысить успеваемость по химии, алгебре и геометрии.">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="profile:first_name" content="Мария">
+    <meta property="profile:last_name" content="Суровцева">
+    <meta property="profile:gender" content="female">
+
+    <link rel="stylesheet" href="/css/index.css?v=<?= filemtime(__DIR__ . '/css/index.css'); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -107,7 +125,7 @@
     </div>
 
     <div class="content_logo_btn">
-        <button class="main_logo_btn">Записаться на занятие</button>
+        <button class="main_logo_btn" data-remodal-target="modal">Записаться на занятие</button>
     </div>
 </section>
 
@@ -127,7 +145,7 @@
                     Опыт репетиторской деятельности: с 2012 года
                 </p>
 
-                <img src="img/diplom.jpg" alt="diplom">
+                <a href="/img/diplom.jpg" data-fancybox><img src="/img/diplom_thumb.jpg" alt="diplom"></a>
             </div>
 
             <div class="about_me_item">
@@ -205,7 +223,7 @@
                 через WhatsApp с использованием камеры телефона и штатива.
             </p>
         </div>
-        <img src="img/serotonin1.png" alt="formula" class="formula">
+        <img src="/img/serotonin1.png" alt="formula" class="formula">
     </section>
     <section class="contacts_wrapper" id="contact">
         <div class="contacts_info">
@@ -247,7 +265,7 @@
                             <!--                                    <label for="telephone-input">Телефон</label>-->
                             <div class="usertelephone"><input id="telephone-input" name="phone" type="text" placeholder="Введите номер телефона" required></div>
                         </div>
-                        <button class="btn_contacts">Отправить</button>
+                        <button type="submit" class="btn_contacts">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -281,25 +299,48 @@
         <p>
             Скидка при единовременной оплате 10 занятий - 10 процентов
         </p>
-        <img src="img/formula.png" alt="formula" class="formula">
+        <img src="/img/formula.png" alt="formula" class="formula">
     </section>
 
     <section class="reviews" id="review">
         <h6>Отзывы</h6>
-        <img src="img/Screenshot_2020-11-05_16-44-10.png" alt="review">
-        <img src="img/Screenshot_2020-11-05_16-44-32.png" alt="review">
-        <img src="img/Screenshot_2020-11-05_16-44-57.png" alt="review">
+        <img src="/img/Screenshot_2020-11-05_16-44-10.png" alt="review">
+        <img src="/img/Screenshot_2020-11-05_16-44-32.png" alt="review">
+        <img src="/img/Screenshot_2020-11-05_16-44-57.png" alt="review">
 
         <a href="https://spb.profi.ru/profile/SurovtsevaMN/"> Еще больше отзывов читать на profi.ru...</a>
     </section>
 
-
+    <div class="remodal modal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h2>Заполните свои контактные данные и я с Вами свяжусь!</h2>
+        <div class="feedback_form">
+            <form action="" method="post">
+                <div class="forma">
+                    <div class="form-group">
+                        <!--<label for="name-input">Имя</label>-->
+                        <div class="username"><input id="name-input" name="name" type="text" placeholder="Введите имя" title="Начните заполнять форму" required></div>
+                    </div>
+                    <div class="form-group">
+                        <!--                                    <label for="email-input">E-mail</label>-->
+                        <div class="useremail"><input id="email-input" name="email" type="email" placeholder="Введите почту" required></div>
+                    </div>
+                    <div class="form-group">
+                        <!--                                    <label for="telephone-input">Телефон</label>-->
+                        <div class="usertelephone"><input id="telephone-input" name="phone" type="text" placeholder="Введите номер телефона" required></div>
+                    </div>
+                    <button type="submit" class="btn_contacts">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <footer class="footer"></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
-<script src="/js/script.js?t=2021-01-09"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous"></script>
+<script src="/js/script.js?v=<?= filemtime(__DIR__ . '/js/script.js'); ?>"></script>
 </body>
 </html>

@@ -127,13 +127,18 @@ html, body {
                 margin: 40px;
             }
 
-            img{
+            a{
                 display: block;
                 width: 300px;
                 margin: 0 auto;
-                height: auto;
-                transform: rotate(90deg);
+
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
             }
+
 
             .item{
                 padding: 15px;
@@ -425,7 +430,60 @@ html, body {
     }
 }
 
+.modal{
+    h2{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.7;
+        color: #212121;
+    }
 
+    .form-group {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #eeeeee;
+
+        input {
+            display: block;
+            background: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 0;
+            box-shadow: none;
+            color: #131313;
+            font-size: 13px;
+            min-height: 20px;
+            line-height: 25px;
+            padding: 7px 15px;
+            font-weight: 500;
+            width: 100%;
+
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.7;
+                color: #212121;
+            }
+        }
+    }
+
+    .btn_contacts {
+        padding: 15px 60px;
+        background-color: #0089d2;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #eeeeee;
+
+        &:hover, &:active, &:focus {
+            color: #212121;
+        }
+    }
+
+
+}
 
 @keyframes formula {
     from {
