@@ -167,6 +167,21 @@
           crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(71084218, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/71084218" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <header class="header">
@@ -184,7 +199,7 @@
 <section class="content_logo">
     <div class="content_logo_text">
         <div class="main_logo_text">
-            <p>Ваш репетитор по химии и математике!</p>
+            <h1>Ваш репетитор по химии и математике!</h1>
         </div>
     </div>
 
@@ -318,15 +333,15 @@
                 <form action="" method="post">
                     <div class="forma">
                         <div class="form-group">
-                            <!--<label for="name-input">Имя</label>-->
+                            <label for="name-input">Имя</label>
                             <div class="username"><input id="name-input" name="name" type="text" placeholder="Введите имя" title="Начните заполнять форму" required></div>
                         </div>
                         <div class="form-group">
-                            <!--                                    <label for="email-input">E-mail</label>-->
+                            <label for="email-input">E-mail</label>
                             <div class="useremail"><input id="email-input" name="email" type="email" placeholder="Введите почту" required></div>
                         </div>
                         <div class="form-group">
-                            <!--                                    <label for="telephone-input">Телефон</label>-->
+                            <label for="telephone-input">Телефон</label>
                             <div class="usertelephone"><input id="telephone-input" name="phone" type="text" placeholder="Введите номер телефона" required></div>
                         </div>
                         <button type="submit" class="btn_contacts">Отправить</button>
@@ -417,7 +432,7 @@
                         Отлично! Нашла контакт с ребенком.Оценила его возможности
                         (проблемы с математикой). После занятий у ребёнка появилась уверенность
                         и желание учиться. Ответственный, требовательный, пунктуальный педагог.
-                        Спасибо !!!!
+                        Спасибо!!!!
                     </p>
                 </div>
             </div>
@@ -461,16 +476,16 @@
             <form action="" method="post">
                 <div class="forma">
                     <div class="form-group">
-                        <!--<label for="name-input">Имя</label>-->
-                        <div class="username"><input id="name-input" name="name" type="text" placeholder="Введите имя" title="Начните заполнять форму" required></div>
+                        <label for="modal-name-input">Имя</label>
+                        <div class="username"><input id="modal-name-input" name="name" type="text" placeholder="Введите имя" title="Начните заполнять форму" required></div>
                     </div>
                     <div class="form-group">
-                        <!--                                    <label for="email-input">E-mail</label>-->
-                        <div class="useremail"><input id="email-input" name="email" type="email" placeholder="Введите почту" required></div>
+                        <label for="modal-email-input">E-mail</label>
+                        <div class="useremail"><input id="modal-email-input" name="email" type="email" placeholder="Введите почту" required></div>
                     </div>
                     <div class="form-group">
-                        <!--                                    <label for="telephone-input">Телефон</label>-->
-                        <div class="usertelephone"><input id="telephone-input" name="phone" type="text" placeholder="Введите номер телефона" required></div>
+                        <label for="modal-telephone-input">Телефон</label>
+                        <div class="usertelephone"><input id="modal-telephone-input" name="phone" type="text" placeholder="Введите номер телефона" required></div>
                     </div>
                     <button type="submit" class="btn_contacts">Отправить</button>
                 </div>
