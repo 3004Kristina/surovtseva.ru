@@ -168,30 +168,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments);
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+        })
+        (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-        ym(71084218, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
+        ym(71084218, 'init', {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/71084218" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/71084218" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+<div class="vcard">
+    <div class="fn org">Ваш репетитор по химии и математике</div>
+    <div class="adr"><span class=”country-name”>Россия</span>, <span class="locality">г. Санкт-Петербург</span>
+        <div class="tel">+7 (953) 774-93-38</div>
+        <a class="url" href="https://surovtseva.ru/">https://surovtseva.ru/</a></div>
+</div>
 <header class="header">
     <nav>
         <ul class="main_menu">
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#for_students">Для учеников</a></li>
-            <li><a href="#contact">Контакты</a></li>
-            <li><a href="#price">Стоимость</a></li>
-            <li><a href="#review">Отзывы</a></li>
+            <li><a href="#block-about">Обо мне</a></li>
+            <li><a href="#block-for_students">Для учеников</a></li>
+            <li><a href="#block-contact">Контакты</a></li>
+            <li><a href="#block-price">Стоимость</a></li>
+            <li><a href="#block-review">Отзывы</a></li>
         </ul>
     </nav>
 </header>
@@ -208,8 +221,8 @@
     </div>
 </section>
 
-<div class="container">
-    <section class="about_me" id="about">
+<div class="wrapper">
+    <section class="about_me" id="block-about">
         <p>Меня зовут Мария Суровцева. Я профессиональный репетитор по <span class="blue">химии</span> и <span class="blue">математике</span>. Я готовлю своих учеников к экзаменам
             формата <span class="blue">ОГЭ</span> и <span class="blue">ЕГЭ</span>, к вступительным экзаменам в специализированные школы, а также провожу занятия со школьниками,
             которые хотят повысить успеваемость по <span class="blue">химии</span>, <span class="blue">алгебре</span> и <span class="blue">геометрии</span>.</p>
@@ -243,7 +256,7 @@
         </div>
     </section>
 
-    <section class="study_list" id="for_students">
+    <section class="study_list" id="block-for_students">
         <h6>Занятия со мной это:</h6>
         <ul class="main_list">
             <li>
@@ -304,7 +317,7 @@
         </div>
         <img src="/img/serotonin1.png" alt="formula" class="formula">
     </section>
-    <section class="contacts_wrapper" id="contact">
+    <section class="contacts_wrapper" id="block-contact">
         <div class="contacts_info">
             <div class="info">
                 <h4>Контакты</h4>
@@ -330,7 +343,7 @@
 
             <div class="info">
                 <p class="form_text">Оставьте свои контактные данные и я с Вами свяжусь!</p>
-                <form action="" method="post">
+                <form id="main-form" action="" method="post">
                     <div class="forma">
                         <div class="form-group">
                             <label for="name-input">Имя</label>
@@ -351,7 +364,7 @@
         </div>
     </section>
 
-    <section class="cost" id="price">
+    <section class="cost" id="block-price">
         <h6>Стоимость</h6>
         <div class="cost_wrapper">
             <div class="cost_item">
@@ -381,7 +394,7 @@
         <img src="/img/formula.png" alt="formula" class="formula">
     </section>
 
-    <section class="reviews" id="review">
+    <section class="reviews" id="block-review">
         <h6>Отзывы</h6>
         <div class="reviews_wrapper">
             <div class="review_item">
@@ -469,11 +482,11 @@
         <a href="https://spb.profi.ru/profile/SurovtsevaMN/"> Еще больше отзывов читать на profi.ru...</a>
     </section>
 
-    <div class="remodal modal" data-remodal-id="modal">
+    <div class="remodal main_modal" data-remodal-id="modal">
         <button data-remodal-action="close" class="remodal-close"></button>
         <h2>Заполните свои контактные данные и я с Вами свяжусь!</h2>
         <div class="feedback_form">
-            <form action="" method="post">
+            <form id="modal-form" action="" method="post">
                 <div class="forma">
                     <div class="form-group">
                         <label for="modal-name-input">Имя</label>
@@ -492,6 +505,13 @@
             </form>
         </div>
     </div>
+
+    <div class="remodal thanks-modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+       <p>
+           Спасибо за Ваш ответ!<br> Я свяжусь с Вами в ближайшее время.
+       </p>
+    </div>
 </div>
 
 <footer class="footer"></footer>
@@ -500,8 +520,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+        integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
         integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
         crossorigin="anonymous"></script>
 <script src="/js/script.js?v=<?= filemtime(__DIR__ . '/js/script.js'); ?>"></script>
 </body>

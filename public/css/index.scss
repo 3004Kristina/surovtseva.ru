@@ -5,13 +5,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
-    color: #eeeeee;
-    background-color: #212121;
+    font-family: Montserrat, sans-serif !important;
+    color: #eeeeee !important;
+    background-color: #212121 !important;
 
 }
 
-.container {
+.wrapper {
     width: 1300px;
     margin: 0 auto;
     border-right: 1px solid #333333;
@@ -34,6 +34,13 @@ html, body {
         border-right: none;
         border-left: none;
     }
+}
+
+.vcard{
+    position: fixed;
+    top: -10000px;
+    left: -10000px;
+    opacity: 0;
 }
 
 .header {
@@ -155,7 +162,7 @@ html, body {
 
 
 .about_me {
-    padding-top: 70px;
+    padding-top: 40px;
 
     p {
         text-align: center;
@@ -172,7 +179,7 @@ html, body {
     h6 {
         text-align: center;
         font-size: 40px;
-        margin: 140px 0 0 0;
+        margin: 90px 0 0 0;
         color: #0089d2;
     }
 
@@ -273,12 +280,13 @@ html, body {
 }
 
 .study_list {
-    padding-top: 70px;
+    padding-top: 40px;
 
     h6 {
         text-align: center;
         font-size: 40px;
         color: #0089d2;
+        margin: 40px 0;
     }
 
     .main_list {
@@ -682,7 +690,7 @@ html, body {
 }
 
 .reviews {
-    padding: 50px 0;
+    padding: 0 0 50px;
 
     h6 {
         font-size: 28px;
@@ -815,7 +823,11 @@ html, body {
     }
 }
 
-.modal {
+.main_modal {
+    .error{
+        color: #212121;
+    }
+
     h2 {
         font-weight: 600;
         font-size: 20px;
@@ -870,8 +882,13 @@ html, body {
             color: #212121;
         }
     }
+}
 
-
+.thanks-modal{
+    padding: 30px;
+    p{
+        color: #212121;
+    }
 }
 
 @keyframes formula {
