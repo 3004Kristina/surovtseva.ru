@@ -111,16 +111,16 @@ html, body {
             border-radius: 10px;
             box-shadow: 0 0 15px #9c9c9c;
             padding: 15px 40px;
-            background-color: #282828;
+            background-color: #212121;
             color: #eeeeee;
             font-weight: 500;
             font-family: Montserrat, 'sans-serif';
             font-size: 22px;
             letter-spacing: 1.1px;
-            transition: background-color 0.2s;
+            transition: box-shadow 0.2s;
 
             &:hover {
-                background-color: #212121;
+                box-shadow: 1px 1px 9px 2px rgba(24, 24, 24, 0.66);
             }
         }
     }
@@ -427,10 +427,10 @@ html, body {
                 font-weight: 600;
                 font-size: 16px;
                 color: #eeeeee;
-                transition: background-color 0.2s;
+                transition: box-shadow 0.2s;
 
                 &:hover, &:active, &:focus {
-                    background-color: #257CFF;
+                    box-shadow: 1px 1px 9px 2px rgba(37, 124, 255, 0.66);
                 }
             }
 
@@ -882,10 +882,10 @@ html, body {
         font-weight: 600;
         font-size: 16px;
         color: #eeeeee;
-        transition: background-color 0.2s;
+        transition: box-shadow 0.2s;
 
         &:hover, &:active, &:focus {
-            background-color: #257CFF;
+            box-shadow: 1px 1px 9px 2px rgba(37, 124, 255, 0.66);
         }
     }
 }
