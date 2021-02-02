@@ -5,13 +5,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif !important;
-    color: #eeeeee !important;
-    background-color: #212121 !important;
+    font-family: Montserrat, sans-serif;
+    color: #eeeeee;
+    background-color: #212121;
 
 }
 
-.wrapper {
+.container {
     width: 1300px;
     margin: 0 auto;
     border-right: 1px solid #333333;
@@ -62,6 +62,7 @@ html, body {
             padding: 30px 40px;
             font-weight: 600;
             font-size: 20px;
+            transition: color 0.2s;
 
             &:hover {
                 color: #0089d2;
@@ -110,15 +111,16 @@ html, body {
             border-radius: 10px;
             box-shadow: 0 0 15px #9c9c9c;
             padding: 15px 40px;
-            background-color: #212121;
+            background-color: #282828;
             color: #eeeeee;
             font-weight: 500;
             font-family: Montserrat, 'sans-serif';
             font-size: 22px;
             letter-spacing: 1.1px;
+            transition: background-color 0.2s;
 
             &:hover {
-                color: #0089d2;
+                background-color: #212121;
             }
         }
     }
@@ -425,9 +427,10 @@ html, body {
                 font-weight: 600;
                 font-size: 16px;
                 color: #eeeeee;
+                transition: background-color 0.2s;
 
                 &:hover, &:active, &:focus {
-                    color: #212121;
+                    background-color: #257CFF;
                 }
             }
 
@@ -513,6 +516,7 @@ html, body {
                 a {
                     color: #eeeeee;
                     text-decoration: none;
+                    transition: color 0.2s;
 
                     &:hover {
                         color: #0089d2;
@@ -707,6 +711,7 @@ html, body {
         font-size: 24px;
         text-align: center;
         margin: 60px 0;
+        transition: color 0.2s;
 
         &:hover {
             color: #0089d2;
@@ -877,9 +882,10 @@ html, body {
         font-weight: 600;
         font-size: 16px;
         color: #eeeeee;
+        transition: background-color 0.2s;
 
         &:hover, &:active, &:focus {
-            color: #212121;
+            background-color: #257CFF;
         }
     }
 }

@@ -221,7 +221,7 @@
     </div>
 </section>
 
-<div class="wrapper">
+<div class="container">
     <section class="about_me" id="block-about">
         <p>Меня зовут Мария Суровцева. Я профессиональный репетитор по <span class="blue">химии</span> и <span class="blue">математике</span>. Я готовлю своих учеников к экзаменам
             формата <span class="blue">ОГЭ</span> и <span class="blue">ЕГЭ</span>, к вступительным экзаменам в специализированные школы, а также провожу занятия со школьниками,
