@@ -33,21 +33,21 @@
                     "@type": "Offer",
                     "name": "Повышение успеваемости",
                     "availability": "https://schema.org/OnlineOnly",
-                    "price": "900 рублей/час",
+                    "price": "1500 рублей/час",
                     "priceCurrency": "RUB"
                 },
                 {
                     "@type": "Offer",
                     "name": "Подготовка к экзаменам",
                     "availability": "https://schema.org/OnlineOnly",
-                    "price": "1000 рублей/час",
+                    "price": "2000 рублей/час",
                     "priceCurrency": "RUB"
                 },
                 {
                     "@type": "Offer",
                     "name": "Занятия в мини-группах по 3-4 человека",
                     "availability": "https://schema.org/OnlineOnly",
-                    "price": "450 рублей/час",
+                    "price": "800 рублей/час",
                     "priceCurrency": "RUB"
                 }
             ],
@@ -370,21 +370,21 @@
             <div class="cost_item">
                 <h6>Повышение успеваемости</h6>
                 <p>
-                    900 рублей/час
+                    1500 рублей/час
                 </p>
             </div>
 
             <div class="cost_item">
                 <h6>Подготовка к экзаменам</h6>
                 <p>
-                    1000 рублей/час
+                    2000 рублей/час
                 </p>
             </div>
 
             <div class="cost_item">
                 <h6>Занятия в мини-группах (3-4 человека)</h6>
                 <p>
-                    450 рублей/час
+                    800 рублей/час
                 </p>
             </div>
         </div>
